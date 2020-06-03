@@ -1,0 +1,130 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+.app{
+    background-color: #fff;
+    width: 95vw;
+    height: 90vh;
+    overflow: hidden;
+    box-shadow: 1px 0 5px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bg-tom{
+    background-color: tomato;
+    padding-top: 0.01rem;
+}
+.greeting{
+    font-size: x-large;
+    margin: 5px;
+    display: block;
+}
+.date{
+    margin-left: 20px;
+}
+.input{
+  text-align: center;
+}
+#listDiv{
+  height: 60.5vh;
+  overflow-y: scroll;
+}
+small{
+  margin-left: 0.5rem;
+}
+button{
+    border-color: rgb(0, 47, 255);
+    border-left: none;
+    border-width: thin;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#textValue{
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 0px;
+    border-color: rgb(0, 47, 255);
+    border-width: thin;
+    border-right: 0px;
+}
+ol#ul{margin: 0px;}
+ol#ul li{
+    background-color: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 0px;
+}
+ol#ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+ol#ul li:hover {
+    background-color: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ol#ul li.checked {
+    background-color: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ol#ul li.checked::before {
+    content: ' ✔ ';
+    position: inherit;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    background-color: gainsboro;
+    width: 7px;
+}
+
+.remove{
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23075eff' viewBox='0 0 448 512'%3e%3cpath stroke='%23dc3545' d='M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+    background-color: gainsboro;
+}
+.remove:hover{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 448 512'%3e%3cpath stroke='%23dc3545' d='M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+}
+/* hr */
+.thin{opacity: 0.2}
+span.text{
+    text-overflow: clip;
+    word-wrap: break-word;
+    margin: 0px;
+}
+.time{
+  float: right;
+  padding-right: 0.5rem;
+}
+/* .twitte{
+    border-color: #075eff;
+    padding: 20px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23075eff' viewBox='0 0 448 512'%3e%3cpath stroke='%23dc3545' d=''/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right calc(0.375em + 0.1875rem);
+    background-size: 30px;
+} */

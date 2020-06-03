@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "item": "Create Todo app",
+    "state": true
+  },
+  {
+    "id": 1,
+    "item": "Create GitHub fetch data app",
+    "state": false
+  },
+  {
+    "id": 2,
+    "item": "Complete Quiz app",
+    "state": false
+  },
+  {
+    "id": 3,
+    "item": "Complete timer app",
+    "state": true
+  },
+  {
+    "id": 4,
+    "item": "Study more jQuery",
+    "state": false
+  },
+  {
+    "id": 5,
+    "item": "Complete Eloquent JS",
+    "state": true
+  }
+]
